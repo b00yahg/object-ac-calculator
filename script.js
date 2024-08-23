@@ -1,174 +1,174 @@
 // Database of objects with their default properties
 const objectDatabase = {
     // Town/City Items
-    "barstool": { size: "Medium", material: "Wood" },
-    "table": { size: "Medium", material: "Wood" },
-    "chair": { size: "Medium", material: "Wood" },
-    "bench": { size: "Medium", material: "Wood" },
-    "door": { size: "Large", material: "Wood" },
-    "window": { size: "Medium", material: "Glass" },
-    "barrel": { size: "Medium", material: "Wood" },
-    "crate": { size: "Medium", material: "Wood" },
-    "wagon": { size: "Large", material: "Wood" },
-    "signpost": { size: "Medium", material: "Wood" },
-    "streetlamp": { size: "Medium", material: "Iron" },
-    "fountain": { size: "Large", material: "Stone" },
-    "statue": { size: "Large", material: "Stone" },
-    "market_stall": { size: "Large", material: "Wood" },
-    "well": { size: "Large", material: "Stone" },
-    "chimney": { size: "Medium", material: "Stone" },
-    "roof": { size: "Large", material: "Wood" },
-    "shutter": { size: "Small", material: "Wood" },
-    "fence": { size: "Medium", material: "Wood" },
-    "gate": { size: "Large", material: "Wood" },
-    "cobblestone": { size: "Tiny", material: "Stone" },
-    "rain_barrel": { size: "Medium", material: "Wood" },
-    "weathervane": { size: "Small", material: "Iron" },
+    "barstool": { size: "Medium", defaultdefaultMaterial: "Wood" },
+    "table": { size: "Medium", defaultMaterial: "Wood" },
+    "chair": { size: "Medium", defaultMaterial: "Wood" },
+    "bench": { size: "Medium", defaultMaterial: "Wood" },
+    "door": { size: "Large", defaultMaterial: "Wood" },
+    "window": { size: "Medium", defaultMaterial: "Glass" },
+    "barrel": { size: "Medium", defaultMaterial: "Wood" },
+    "crate": { size: "Medium", defaultMaterial: "Wood" },
+    "wagon": { size: "Large", defaultMaterial: "Wood" },
+    "signpost": { size: "Medium", defaultMaterial: "Wood" },
+    "streetlamp": { size: "Medium", defaultMaterial: "Iron" },
+    "fountain": { size: "Large", defaultMaterial: "Stone" },
+    "statue": { size: "Large", defaultMaterial: "Stone" },
+    "market_stall": { size: "Large", defaultMaterial: "Wood" },
+    "well": { size: "Large", defaultMaterial: "Stone" },
+    "chimney": { size: "Medium", defaultMaterial: "Stone" },
+    "roof": { size: "Large", defaultMaterial: "Wood" },
+    "shutter": { size: "Small", defaultMaterial: "Wood" },
+    "fence": { size: "Medium", defaultMaterial: "Wood" },
+    "gate": { size: "Large", defaultMaterial: "Wood" },
+    "cobblestone": { size: "Tiny", defaultMaterial: "Stone" },
+    "rain_barrel": { size: "Medium", defaultMaterial: "Wood" },
+    "weathervane": { size: "Small", defaultMaterial: "Iron" },
 
     // Tavern/Inn Items
-    "mug": { size: "Tiny", material: "Wood" },
-    "plate": { size: "Tiny", material: "Wood" },
-    "bottle": { size: "Tiny", material: "Glass" },
-    "tankard": { size: "Tiny", material: "Wood" },
-    "keg": { size: "Medium", material: "Wood" },
-    "chandelier": { size: "Medium", material: "Iron" },
-    "fireplace": { size: "Large", material: "Stone" },
-    "bed": { size: "Large", material: "Wood" },
-    "stool": { size: "Small", material: "Wood" },
-    "candle": { size: "Tiny", material: "Wax" },
-    "lantern": { size: "Tiny", material: "Iron" },
-    "tablecloth": { size: "Medium", material: "Cloth" },
-    "menu": { size: "Tiny", material: "Parchment" },
-    "dartboard": { size: "Small", material: "Wood" },
-    "bar": { size: "Large", material: "Wood" },
-    "wine_rack": { size: "Medium", material: "Wood" },
-    "spittoon": { size: "Small", material: "Brass" },
+    "mug": { size: "Tiny", defaultMaterial: "Wood" },
+    "plate": { size: "Tiny", defaultMaterial: "Wood" },
+    "bottle": { size: "Tiny", defaultMaterial: "Glass" },
+    "tankard": { size: "Tiny", defaultMaterial: "Wood" },
+    "keg": { size: "Medium", defaultMaterial: "Wood" },
+    "chandelier": { size: "Medium", defaultMaterial: "Iron" },
+    "fireplace": { size: "Large", defaultMaterial: "Stone" },
+    "bed": { size: "Large", defaultMaterial: "Wood" },
+    "stool": { size: "Small", defaultMaterial: "Wood" },
+    "candle": { size: "Tiny", defaultMaterial: "Wax" },
+    "lantern": { size: "Tiny", defaultMaterial: "Iron" },
+    "tablecloth": { size: "Medium", defaultMaterial: "Cloth" },
+    "menu": { size: "Tiny", defaultMaterial: "Parchment" },
+    "dartboard": { size: "Small", defaultMaterial: "Wood" },
+    "bar": { size: "Large", defaultMaterial: "Wood" },
+    "wine_rack": { size: "Medium", defaultMaterial: "Wood" },
+    "spittoon": { size: "Small", defaultMaterial: "Brass" },
 
     // Dungeon Items
-    "torch_holder": { size: "Small", material: "Iron" },
-    "chain": { size: "Medium", material: "Iron" },
-    "portcullis": { size: "Large", material: "Iron" },
-    "chest": { size: "Medium", material: "Wood" },
-    "coffin": { size: "Large", material: "Wood" },
-    "sarcophagus": { size: "Large", material: "Stone" },
-    "altar": { size: "Large", material: "Stone" },
-    "pillar": { size: "Large", material: "Stone" },
-    "pedestal": { size: "Medium", material: "Stone" },
-    "brazier": { size: "Medium", material: "Iron" },
-    "cauldron": { size: "Medium", material: "Iron" },
-    "iron_maiden": { size: "Large", material: "Iron" },
-    "rack": { size: "Large", material: "Wood" },
-    "stocks": { size: "Medium", material: "Wood" },
-    "oubliette": { size: "Large", material: "Stone" },
-    "gargoyle": { size: "Medium", material: "Stone" },
-    "spike_trap": { size: "Medium", material: "Iron" },
-    "pit": { size: "Large", material: "Stone" },
-    "secret_door": { size: "Large", material: "Stone" },
+    "torch_holder": { size: "Small", defaultMaterial: "Iron" },
+    "chain": { size: "Medium", defaultMaterial: "Iron" },
+    "portcullis": { size: "Large", defaultMaterial: "Iron" },
+    "chest": { size: "Medium", defaultMaterial: "Wood" },
+    "coffin": { size: "Large", defaultMaterial: "Wood" },
+    "sarcophagus": { size: "Large", defaultMaterial: "Stone" },
+    "altar": { size: "Large", defaultMaterial: "Stone" },
+    "pillar": { size: "Large", defaultMaterial: "Stone" },
+    "pedestal": { size: "Medium", defaultMaterial: "Stone" },
+    "brazier": { size: "Medium", defaultMaterial: "Iron" },
+    "cauldron": { size: "Medium", defaultMaterial: "Iron" },
+    "iron_maiden": { size: "Large", defaultMaterial: "Iron" },
+    "rack": { size: "Large", defaultMaterial: "Wood" },
+    "stocks": { size: "Medium", defaultMaterial: "Wood" },
+    "oubliette": { size: "Large", defaultMaterial: "Stone" },
+    "gargoyle": { size: "Medium", defaultMaterial: "Stone" },
+    "spike_trap": { size: "Medium", defaultMaterial: "Iron" },
+    "pit": { size: "Large", defaultMaterial: "Stone" },
+    "secret_door": { size: "Large", defaultMaterial: "Stone" },
 
     // Wilderness Items
-    "tree": { size: "Large", material: "Wood" },
-    "boulder": { size: "Large", material: "Stone" },
-    "log": { size: "Medium", material: "Wood" },
-    "campfire": { size: "Small", material: "Wood" },
-    "tent": { size: "Medium", material: "Cloth" },
-    "cart": { size: "Large", material: "Wood" },
-    "bush": { size: "Medium", material: "Wood" },
-    "rock": { size: "Medium", material: "Stone" },
-    "stream": { size: "Large", material: "Water" },
-    "fallen_tree": { size: "Large", material: "Wood" },
-    "cave_entrance": { size: "Large", material: "Stone" },
-    "vine": { size: "Medium", material: "Plant" },
-    "mushroom": { size: "Tiny", material: "Plant" },
-    "beehive": { size: "Small", material: "Wood" },
+    "tree": { size: "Large", defaultMaterial: "Wood" },
+    "boulder": { size: "Large", defaultMaterial: "Stone" },
+    "log": { size: "Medium", defaultMaterial: "Wood" },
+    "campfire": { size: "Small", defaultMaterial: "Wood" },
+    "tent": { size: "Medium", defaultMaterial: "Cloth" },
+    "cart": { size: "Large", defaultMaterial: "Wood" },
+    "bush": { size: "Medium", defaultMaterial: "Wood" },
+    "rock": { size: "Medium", defaultMaterial: "Stone" },
+    "stream": { size: "Large", defaultMaterial: "Water" },
+    "fallen_tree": { size: "Large", defaultMaterial: "Wood" },
+    "cave_entrance": { size: "Large", defaultMaterial: "Stone" },
+    "vine": { size: "Medium", defaultMaterial: "Plant" },
+    "mushroom": { size: "Tiny", defaultMaterial: "Plant" },
+    "beehive": { size: "Small", defaultMaterial: "Wood" },
 
     // Castle/Keep Items
-    "throne": { size: "Large", material: "Wood" },
-    "tapestry": { size: "Large", material: "Cloth" },
-    "suit_of_armor": { size: "Medium", material: "Steel" },
-    "shield": { size: "Medium", material: "Wood" },
-    "banner": { size: "Medium", material: "Cloth" },
-    "candelabra": { size: "Medium", material: "Iron" },
-    "drawbridge": { size: "Large", material: "Wood" },
-    "arrow_slit": { size: "Small", material: "Stone" },
-    "battlement": { size: "Large", material: "Stone" },
-    "catapult": { size: "Large", material: "Wood" },
-    "portcullis": { size: "Large", material: "Iron" },
-    "moat": { size: "Large", material: "Water" },
-    "coat_of_arms": { size: "Medium", material: "Wood" },
+    "throne": { size: "Large", defaultMaterial: "Wood" },
+    "tapestry": { size: "Large", defaultMaterial: "Cloth" },
+    "suit_of_armor": { size: "Medium", defaultMaterial: "Steel" },
+    "shield": { size: "Medium", defaultMaterial: "Wood" },
+    "banner": { size: "Medium", defaultMaterial: "Cloth" },
+    "candelabra": { size: "Medium", defaultMaterial: "Iron" },
+    "drawbridge": { size: "Large", defaultMaterial: "Wood" },
+    "arrow_slit": { size: "Small", defaultMaterial: "Stone" },
+    "battlement": { size: "Large", defaultMaterial: "Stone" },
+    "catapult": { size: "Large", defaultMaterial: "Wood" },
+    "portcullis": { size: "Large", defaultMaterial: "Iron" },
+    "moat": { size: "Large", defaultMaterial: "Water" },
+    "coat_of_arms": { size: "Medium", defaultMaterial: "Wood" },
 
     // Common Items
-    "book": { size: "Tiny", material: "Leather" },
-    "scroll": { size: "Tiny", material: "Parchment" },
-    "mirror": { size: "Small", material: "Glass" },
-    "rug": { size: "Large", material: "Cloth" },
-    "painting": { size: "Medium", material: "Wood" },
-    "vase": { size: "Small", material: "Ceramic" },
-    "chest_of_drawers": { size: "Large", material: "Wood" },
-    "wardrobe": { size: "Large", material: "Wood" },
-    "bookshelf": { size: "Large", material: "Wood" },
-    "quill": { size: "Tiny", material: "Feather" },
-    "inkwell": { size: "Tiny", material: "Glass" },
-    "hourglass": { size: "Small", material: "Glass" },
-    "globe": { size: "Medium", material: "Wood" },
-    "abacus": { size: "Small", material: "Wood" },
-    "telescope": { size: "Medium", material: "Brass" },
+    "book": { size: "Tiny", defaultMaterial: "Leather" },
+    "scroll": { size: "Tiny", defaultMaterial: "Parchment" },
+    "mirror": { size: "Small", defaultMaterial: "Glass" },
+    "rug": { size: "Large", defaultMaterial: "Cloth" },
+    "painting": { size: "Medium", defaultMaterial: "Wood" },
+    "vase": { size: "Small", defaultMaterial: "Ceramic" },
+    "chest_of_drawers": { size: "Large", defaultMaterial: "Wood" },
+    "wardrobe": { size: "Large", defaultMaterial: "Wood" },
+    "bookshelf": { size: "Large", defaultMaterial: "Wood" },
+    "quill": { size: "Tiny", defaultMaterial: "Feather" },
+    "inkwell": { size: "Tiny", defaultMaterial: "Glass" },
+    "hourglass": { size: "Small", defaultMaterial: "Glass" },
+    "globe": { size: "Medium", defaultMaterial: "Wood" },
+    "abacus": { size: "Small", defaultMaterial: "Wood" },
+    "telescope": { size: "Medium", defaultMaterial: "Brass" },
 
     // Miscellaneous
-    "ladder": { size: "Large", material: "Wood" },
-    "anvil": { size: "Medium", material: "Iron" },
-    "forge": { size: "Large", material: "Stone" },
-    "fishing_rod": { size: "Medium", material: "Wood" },
-    "loom": { size: "Large", material: "Wood" },
-    "spinning_wheel": { size: "Medium", material: "Wood" },
-    "plow": { size: "Large", material: "Wood" },
-    "millstone": { size: "Large", material: "Stone" },
-    "gallows": { size: "Large", material: "Wood" },
-    "trebuchet": { size: "Large", material: "Wood" },
-    "ballista": { size: "Large", material: "Wood" },
-    "sundial": { size: "Medium", material: "Stone" },
-    "scarecrow": { size: "Medium", material: "Cloth" },
-    "beehive": { size: "Medium", material: "Wood" },
-    "birdcage": { size: "Small", material: "Iron" },
-    "wagon_wheel": { size: "Medium", material: "Wood" },
-    "gravestone": { size: "Medium", material: "Stone" },
-    "guillotine": { size: "Large", material: "Wood" },
+    "ladder": { size: "Large", defaultMaterial: "Wood" },
+    "anvil": { size: "Medium", defaultMaterial: "Iron" },
+    "forge": { size: "Large", defaultMaterial: "Stone" },
+    "fishing_rod": { size: "Medium", defaultMaterial: "Wood" },
+    "loom": { size: "Large", defaultMaterial: "Wood" },
+    "spinning_wheel": { size: "Medium", defaultMaterial: "Wood" },
+    "plow": { size: "Large", defaultMaterial: "Wood" },
+    "millstone": { size: "Large", defaultMaterial: "Stone" },
+    "gallows": { size: "Large", defaultMaterial: "Wood" },
+    "trebuchet": { size: "Large", defaultMaterial: "Wood" },
+    "ballista": { size: "Large", defaultMaterial: "Wood" },
+    "sundial": { size: "Medium", defaultMaterial: "Stone" },
+    "scarecrow": { size: "Medium", defaultMaterial: "Cloth" },
+    "beehive": { size: "Medium", defaultMaterial: "Wood" },
+    "birdcage": { size: "Small", defaultMaterial: "Iron" },
+    "wagon_wheel": { size: "Medium", defaultMaterial: "Wood" },
+    "gravestone": { size: "Medium", defaultMaterial: "Stone" },
+    "guillotine": { size: "Large", defaultMaterial: "Wood" },
 
     // Magical Items (treat as normal objects for gameplay purposes)
-    "crystal_ball": { size: "Tiny", material: "Glass" },
-    "magic_mirror": { size: "Medium", material: "Glass" },
-    "enchanted_statue": { size: "Medium", material: "Stone" },
-    "alchemy_table": { size: "Large", material: "Wood" },
-    "spellbook": { size: "Small", material: "Leather" },
-    "magical_orb": { size: "Tiny", material: "Glass" },
-    "rune_stone": { size: "Small", material: "Stone" },
-    "enchanted_weapon_rack": { size: "Medium", material: "Wood" },
-    "potion_shelf": { size: "Medium", material: "Wood" },
-    "arcane_circle": { size: "Large", material: "Stone" },
-    "summoning_portal": { size: "Large", material: "Stone" },
-    "enchanted_loom": { size: "Large", material: "Wood" },
-    "scrying_pool": { size: "Medium", material: "Stone" },
+    "crystal_ball": { size: "Tiny", defaultMaterial: "Glass" },
+    "magic_mirror": { size: "Medium", defaultMaterial: "Glass" },
+    "enchanted_statue": { size: "Medium", defaultMaterial: "Stone" },
+    "alchemy_table": { size: "Large", defaultMaterial: "Wood" },
+    "spellbook": { size: "Small", defaultMaterial: "Leather" },
+    "magical_orb": { size: "Tiny", defaultMaterial: "Glass" },
+    "rune_stone": { size: "Small", defaultMaterial: "Stone" },
+    "enchanted_weapon_rack": { size: "Medium", defaultMaterial: "Wood" },
+    "potion_shelf": { size: "Medium", defaultMaterial: "Wood" },
+    "arcane_circle": { size: "Large", defaultMaterial: "Stone" },
+    "summoning_portal": { size: "Large", defaultMaterial: "Stone" },
+    "enchanted_loom": { size: "Large", defaultMaterial: "Wood" },
+    "scrying_pool": { size: "Medium", defaultMaterial: "Stone" },
 
     // Additional Items
-    "lectern": { size: "Medium", material: "Wood" },
-    "pulpit": { size: "Large", material: "Wood" },
-    "pew": { size: "Large", material: "Wood" },
-    "confessional": { size: "Large", material: "Wood" },
-    "sundial": { size: "Medium", material: "Stone" },
-    "weathervane": { size: "Small", material: "Iron" },
-    "bell": { size: "Medium", material: "Bronze" },
-    "clocktower": { size: "Large", material: "Stone" },
-    "battering_ram": { size: "Large", material: "Wood" },
-    "siege_tower": { size: "Large", material: "Wood" },
-    "catapult": { size: "Large", material: "Wood" },
-    "ballista": { size: "Large", material: "Wood" },
-    "pillory": { size: "Medium", material: "Wood" },
-    "gibbet": { size: "Medium", material: "Iron" },
-    "rack": { size: "Large", material: "Wood" },
-    "iron_maiden": { size: "Large", material: "Iron" },
-    "thumbscrew": { size: "Tiny", material: "Iron" },
-    "branding_iron": { size: "Small", material: "Iron" },
-    "ducking_stool": { size: "Large", material: "Wood" },
-    "whipping_post": { size: "Medium", material: "Wood" },
+    "lectern": { size: "Medium", defaultMaterial: "Wood" },
+    "pulpit": { size: "Large", defaultMaterial: "Wood" },
+    "pew": { size: "Large", defaultMaterial: "Wood" },
+    "confessional": { size: "Large", defaultMaterial: "Wood" },
+    "sundial": { size: "Medium", defaultMaterial: "Stone" },
+    "weathervane": { size: "Small", defaultMaterial: "Iron" },
+    "bell": { size: "Medium", defaultMaterial: "Bronze" },
+    "clocktower": { size: "Large", defaultMaterial: "Stone" },
+    "battering_ram": { size: "Large", defaultMaterial: "Wood" },
+    "siege_tower": { size: "Large", defaultMaterial: "Wood" },
+    "catapult": { size: "Large", defaultMaterial: "Wood" },
+    "ballista": { size: "Large", defaultMaterial: "Wood" },
+    "pillory": { size: "Medium", defaultMaterial: "Wood" },
+    "gibbet": { size: "Medium", defaultMaterial: "Iron" },
+    "rack": { size: "Large", defaultMaterial: "Wood" },
+    "iron_maiden": { size: "Large", defaultMaterial: "Iron" },
+    "thumbscrew": { size: "Tiny", defaultMaterial: "Iron" },
+    "branding_iron": { size: "Small", defaultMaterial: "Iron" },
+    "ducking_stool": { size: "Large", defaultMaterial: "Wood" },
+    "whipping_post": { size: "Medium", defaultMaterial: "Wood" },
 };
 
 // Expanded materialAC to include new materials
@@ -198,6 +198,48 @@ const hitPoints = {
     "Large": { "Fragile": "1d10", "Resilient": "5d10" },
 };
 
+// Size increase mapping
+const sizeIncrease = {
+    "Tiny": "Small",
+    "Small": "Medium",
+    "Medium": "Large",
+    "Large": "Large" // Can't go larger than Large
+};
+
+// Synonyms for resilient
+const resilientSynonyms = [
+    "resilient", "tough", "durable", "sturdy", "robust", "hardy", "strong",
+    "solid", "substantial", "rugged", "enduring", "long-lasting", "tenacious",
+    "unyielding", "firm", "stout", "fortified", "reinforced", "strengthened"
+];
+
+// Material synonyms
+const materialSynonyms = {
+    "Wood": ["wood", "wooden", "timber", "lumber"],
+    "Stone": ["stone", "rock", "granite", "marble", "slate"],
+    "Iron": ["iron", "ferrous", "steel"],
+    "Steel": ["steel", "metal", "iron"],
+    "Glass": ["glass", "crystal", "transparent"],
+    "Cloth": ["cloth", "fabric", "textile", "linen", "cotton", "wool", "silk"],
+    "Leather": ["leather", "hide", "skin"],
+    "Parchment": ["parchment", "paper", "scroll"],
+    "Ceramic": ["ceramic", "pottery", "porcelain", "earthenware"],
+    "Wax": ["wax", "beeswax", "paraffin"],
+    "Brass": ["brass", "bronze"],
+    "Water": ["water", "liquid", "fluid"],
+    "Plant": ["plant", "vegetation", "foliage", "organic"],
+    "Feather": ["feather", "plume", "down"],
+    "Bronze": ["bronze", "copper", "brass"]
+};
+
+// Reverse lookup for material synonyms
+const materialLookup = Object.entries(materialSynonyms).reduce((acc, [key, synonyms]) => {
+    synonyms.forEach(synonym => {
+        acc[synonym] = key;
+    });
+    return acc;
+}, {});
+
 function calculateObject() {
     const input = document.getElementById("objectInput").value.toLowerCase();
     const words = input.split(" ");
@@ -210,21 +252,42 @@ function calculateObject() {
         return;
     }
     
-    let object = {...objectDatabase[objectName]};
+    let object = {
+        size: objectDatabase[objectName].size,
+        material: objectDatabase[objectName].defaultMaterial
+    };
     
+    let isResilient = false;
+    let isBig = false;
+
     // Apply modifiers
     modifiers.forEach(modifier => {
-        if (["tiny", "small", "medium", "large"].includes(modifier)) {
-            object.size = modifier.charAt(0).toUpperCase() + modifier.slice(1);
-        } else if (Object.keys(materialAC).includes(modifier.charAt(0).toUpperCase() + modifier.slice(1))) {
-            object.material = modifier.charAt(0).toUpperCase() + modifier.slice(1);
+        // Check for size increase
+        if (modifier === "big") {
+            isBig = true;
+        }
+        
+        // Check for resilient synonyms
+        if (resilientSynonyms.includes(modifier)) {
+            isResilient = true;
+        }
+        
+        // Check for material synonyms
+        const materialMatch = Object.keys(materialLookup).find(syn => syn === modifier);
+        if (materialMatch) {
+            object.material = materialLookup[materialMatch];
         }
     });
     
-    let resilience = modifiers.includes("resilient") ? "Resilient" : "Fragile";
+    // Apply size increase if "big" was specified
+    if (isBig) {
+        object.size = sizeIncrease[object.size];
+    }
+    
+    let resilience = isResilient ? "Resilient" : "Fragile";
     
     let ac = materialAC[object.material];
     let hp = hitPoints[object.size][resilience];
     
-    document.getElementById("result").innerHTML = `Object: ${objectName}<br>AC: ${ac}<br>Hit Points: ${hp}`;
+    document.getElementById("result").innerHTML = `Object: ${objectName}<br>Material: ${object.material}<br>Size: ${object.size}<br>AC: ${ac}<br>Hit Points: ${hp}`;
 }
