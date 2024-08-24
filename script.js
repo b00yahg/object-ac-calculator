@@ -287,7 +287,7 @@ function calculateObject() {
     let ac = materialAC[object.material];
     let hp = hitPoints[object.size][resilience];
     
-    showResult(`Object: ${objectName}<br>Material: ${object.material}<br>Size: ${object.size}<br>AC: ${ac}<br>Hit Points: ${hp}`);
+    showResult(AC: ${ac}<br>Hit Points: ${hp}`);
 }
 
 function showResult(message) {
