@@ -241,8 +241,9 @@ const materialLookup = Object.entries(materialSynonyms).reduce((acc, [key, synon
 }, {});
 
 function calculateObject() {
-    const input = document.getElementById("objectInput").value.toLowerCase();
-    const words = input.split(" ");
+    console.log("calculateObject function called");
+    const input = document.getElementById("objectInput").value;
+    console.log("Input value:", input);
     
     let objectName = words[words.length - 1];
     let modifiers = words.slice(0, -1);
@@ -290,4 +291,24 @@ function calculateObject() {
     let hp = hitPoints[object.size][resilience];
     
     document.getElementById("result").innerHTML = `Object: ${objectName}<br>Material: ${object.material}<br>Size: ${object.size}<br>AC: ${ac}<br>Hit Points: ${hp}`;
+    showResult(`${input}<br><br>AC: ${ac}<br>Hit Points: ${hp}`);
 }
+
+function showResult(message) {
+    console.log("Showing result:", message);
+    document.getElementById("result").innerHTML = message;
+    document.getElementById("resultPopup").style.display = "block";
+}
+
+// Add these event listeners at the end of your script.js file
+document.querySelector(".close").onclick = function() {
+    document.getElementById("resultPopup").style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("resultPopup")) {
+        document.getElementById("resultPopup").style.display = "none";
+    }
+}
+
+console.log("Script loaded");
