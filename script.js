@@ -111,6 +111,7 @@ const objectDatabase = {
     "hourglass": { size: "Small", defaultMaterial: "Glass" },
     "globe": { size: "Medium", defaultMaterial: "Wood" },
     "abacus": { size: "Small", defaultMaterial: "Wood" },
+    "bucket": { size: "Small", defaultMaterial: "Wood" },
     "telescope": { size: "Medium", defaultMaterial: "Brass" },
 
     // Miscellaneous
