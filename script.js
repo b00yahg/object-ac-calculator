@@ -245,11 +245,12 @@ function calculateObject() {
     const input = document.getElementById("objectInput").value;
     console.log("Input value:", input);
     
+    const words = input.toLowerCase().split(' ');
     let objectName = words[words.length - 1];
     let modifiers = words.slice(0, -1);
     
     if (!objectDatabase[objectName]) {
-        document.getElementById("result").innerHTML = "Object not found in database.";
+        showResult("Object not found in database.");
         return;
     }
     
@@ -263,24 +264,20 @@ function calculateObject() {
 
     // Apply modifiers
     modifiers.forEach(modifier => {
-        // Check for size increase
         if (modifier === "big") {
             isBig = true;
         }
         
-        // Check for resilient synonyms
         if (resilientSynonyms.includes(modifier)) {
             isResilient = true;
         }
         
-        // Check for material synonyms
         const materialMatch = Object.keys(materialLookup).find(syn => syn === modifier);
         if (materialMatch) {
             object.material = materialLookup[materialMatch];
         }
     });
     
-    // Apply size increase if "big" was specified
     if (isBig) {
         object.size = sizeIncrease[object.size];
     }
@@ -290,8 +287,7 @@ function calculateObject() {
     let ac = materialAC[object.material];
     let hp = hitPoints[object.size][resilience];
     
-    document.getElementById("result").innerHTML = `Object: ${objectName}<br>Material: ${object.material}<br>Size: ${object.size}<br>AC: ${ac}<br>Hit Points: ${hp}`;
-    showResult(`${input}<br><br>AC: ${ac}<br>Hit Points: ${hp}`);
+    showResult(`Object: ${objectName}<br>Material: ${object.material}<br>Size: ${object.size}<br>AC: ${ac}<br>Hit Points: ${hp}`);
 }
 
 function showResult(message) {
@@ -310,5 +306,11 @@ window.onclick = function(event) {
         document.getElementById("resultPopup").style.display = "none";
     }
 }
+
+// Add this event listener to make sure the script runs after the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM fully loaded");
+    document.getElementById("analyzeButton").addEventListener("click", calculateObject);
+});
 
 console.log("Script loaded");
