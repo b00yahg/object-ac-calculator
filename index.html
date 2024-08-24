@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Hit Points Calculator</title>
+    <title>Fantasy Object Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Object Hit Points Calculator</h1>
-    <input type="text" id="objectInput" placeholder="Enter object (e.g. barstool, metal barstool, resilient barrel)">
-    <button onclick="calculateObject()">Calculate</button>
-    <div id="result"></div>
+    <div class="parchment">
+        <h1>Mystical Object Analyzer</h1>
+        <div class="input-container">
+            <input type="text" id="objectInput" placeholder="Describe your object (e.g. big iron throne)">
+            <button onclick="calculateObject()">Analyze</button>
+        </div>
+    </div>
+
+    <div id="resultPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Analysis Results</h2>
+            <p id="result"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
